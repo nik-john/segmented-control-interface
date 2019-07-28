@@ -1,56 +1,15 @@
-****<br />
-
-<div align="center"><strong>Start your next react project in seconds</strong></div>
-<div align="center">A highly scalable, offline-first foundation with the best DX and a focus on performance and best practices</div>
-
-<br />
-
-<br />
 
 ## Features
 
-<dl>
-  <dt>Quick scaffolding</dt>
-  <dd>Create components, containers, routes, selectors and sagas - and their tests - right from the CLI!</dd>
-
-  <dt>Instant feedback</dt>
-  <dd>Enjoy the best DX (Developer eXperience) and code your app at the speed of thought! Your saved changes to the CSS and JS are reflected instantaneously without refreshing the page. Preserve application state even when you update something in the underlying code!</dd>
-
-  <dt>Predictable state management</dt>
-  <dd>Unidirectional data flow allows for change logging and time travel debugging.</dd>
-
-  <dt>Next generation JavaScript</dt>
-  <dd>Use template strings, object destructuring, arrow functions, JSX syntax and more.</dd>
-
-  <dt>Next generation CSS</dt>
-  <dd>Write composable CSS that's co-located with your components for complete modularity. Unique generated class names keep the specificity low while eliminating style clashes. Ship only the styles that are on the page for the best performance.</dd>
-
-  <dt>Industry-standard routing</dt>
-  <dd>It's natural to want to add pages (e.g. `/about`) to your application, and routing makes this possible.</dd>
-
-  <dt>Industry-standard i18n internationalization support</dt>
-  <dd>Scalable apps need to support multiple languages, easily add and support multiple languages with `react-intl`.</dd>
-
-  <dt>Offline-first</dt>
-  <dd>The next frontier in performant web apps: availability without a network connection from the instant your users load the app.</dd>
-
-  <dt>Static code analysis</dt>
-  <dd>Focus on writing new features without worrying about formatting or code quality. With the right editor setup, your code will automatically be formatted and linted as you work.</dd>
-
-  <dt>SEO</dt>
-  <dd>We support SEO (document head tags management) for search engines that support indexing of JavaScript content. (eg. Google)</dd>
-</dl>
+- Fully functional full stack app with React (latest v16.8.6 with Hooks) + Redux + ImmerJS + Redux Saga + MaterialUI frontend and mock ExpressJS API server backend (with simulated latency)
+- All components have Loading and Error states
+- Components (presentational) vs Container components pattern for maximum separation of concerns & reusability
+- Flash messaging for User Feedback on Success and Failure
 
 ## Quick start
 
 1.  Make sure that you have Node.js v8.15.1 and npm v5 or above installed.
-2.  Clone this repo using `git clone --depth=1 https://github.com/react-boilerplate/react-boilerplate.git <YOUR_PROJECT_NAME>`
-3.  Move to the appropriate directory: `cd <YOUR_PROJECT_NAME>`.<br />
-4.  Run `npm run setup` in order to install dependencies and clean the git repo.<br />
-    _At this point you can run `npm start` to see the example app at `http://localhost:3000`._
-5.  Run `npm run clean` to delete the example app.
-
-## License
-
-This project is licensed under the MIT license, Copyright (c) 2019 Maximilian
-Stoiber. For more information see `LICENSE.md`.
+2.  Clone this repo using `git@github.com:nik-john/segmented-control-interface.git`
+3.  Move to the appropriate directory: `segmented-control-interface`.<br />
+4.  Run `npm start` to see the app at `http://localhost:3000`
+5.  All available APIs can be seen at `http://localhost:3000/api`
