@@ -1,3 +1,6 @@
+## Demo
+
+![Screen Grab(https://media.giphy.com/media/hX75eX3pTIwOfEh5s5/giphy.gif)
 
 ## Features
 
