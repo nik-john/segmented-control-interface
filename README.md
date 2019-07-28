@@ -1,6 +1,6 @@
 ## Demo
 
-![Screen Grab(https://media.giphy.com/media/hX75eX3pTIwOfEh5s5/giphy.gif)
+<img src="https://media.giphy.com/media/hX75eX3pTIwOfEh5s5/giphy.gif" height="800" />
 
 ## Features
 
