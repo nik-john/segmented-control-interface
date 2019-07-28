@@ -16,12 +16,16 @@ import { useInjectSaga } from 'utils/injectSaga';
 import { useInjectReducer } from 'utils/injectReducer';
 import { Typography } from '@material-ui/core';
 import Loader from 'components/Loader';
-import { makeSelectBrandsData, makeSelectBrandsLoading } from './selectors';
+import {
+  makeSelectBrandsData,
+  makeSelectBrandsLoading,
+  makeSelectBrandsError,
+} from './selectors';
 import reducer from './reducer';
 import saga from './saga';
 import messages from './messages';
 import { fetchBrandsInitAction } from './actions';
-export function Brands({ brands, fetchBrandsData, loading }) {
+export function Brands({ brands, fetchBrandsData, loading, error }) {
   useInjectReducer({ key: 'brands', reducer });
   useInjectSaga({ key: 'brands', saga });
   useEffect(() => {
@@ -37,6 +41,7 @@ export function Brands({ brands, fetchBrandsData, loading }) {
         <FormattedMessage {...messages.header} />
       </Typography>
       <br />
+      {error ? <Typography>No data available</Typography> : ''}
       {loading ? <Loader /> : brands}
     </div>
   );
@@ -46,11 +51,13 @@ Brands.propTypes = {
   brands: PropTypes.string.isRequired,
   fetchBrandsData: PropTypes.func.isRequired,
   loading: PropTypes.bool.isRequired,
+  error: PropTypes.object.isRequired,
 };
 
 const mapStateToProps = createStructuredSelector({
   brands: makeSelectBrandsData(),
   loading: makeSelectBrandsLoading(),
+  error: makeSelectBrandsError(),
 });
 
 function mapDispatchToProps(dispatch) {

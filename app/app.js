@@ -28,6 +28,8 @@ import '!file-loader?name=[name].[ext]!./images/favicon.ico';
 import 'file-loader?name=.htaccess!./.htaccess';
 /* eslint-enable import/no-unresolved, import/extensions */
 
+import CssBaseline from '@material-ui/core/CssBaseline';
+import { MuiThemeProvider } from '@material-ui/core/styles';
 import configureStore from './configureStore';
 
 // Import i18n messages
@@ -41,11 +43,15 @@ const MOUNT_NODE = document.getElementById('app');
 const render = messages => {
   ReactDOM.render(
     <Provider store={store}>
-      <LanguageProvider messages={messages}>
-        <ConnectedRouter history={history}>
-          <App />
-        </ConnectedRouter>
-      </LanguageProvider>
+      <MuiThemeProvider>
+        <CssBaseline>
+          <LanguageProvider messages={messages}>
+            <ConnectedRouter history={history}>
+              <App />
+            </ConnectedRouter>
+          </LanguageProvider>
+        </CssBaseline>
+      </MuiThemeProvider>
     </Provider>,
     MOUNT_NODE,
   );

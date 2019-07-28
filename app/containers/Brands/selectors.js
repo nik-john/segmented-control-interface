@@ -20,6 +20,11 @@ const makeSelectBrandsLoading = () =>
     selectBrandsDomain,
     substate => substate.loading,
   );
+const makeSelectBrandsError = () =>
+  createSelector(
+    selectBrandsDomain,
+    substate => substate.error,
+  );
 /**
  * Default selector used by Brands
  */
@@ -31,4 +36,4 @@ const makeSelectBrands = () =>
   );
 
 export default makeSelectBrands;
-export { makeSelectBrandsData, makeSelectBrandsLoading };
+export { makeSelectBrandsData, makeSelectBrandsLoading, makeSelectBrandsError };

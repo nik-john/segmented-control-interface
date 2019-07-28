@@ -40,4 +40,10 @@ router.get(routes.PARTNERS, (req, res) =>
   }, 2000),
 );
 
+router.get('*', (req, res) =>
+  setTimeout(() => {
+    res.status(404).send({ message: 'Invalid Route' });
+  }, 2000),
+);
+
 module.exports = router;

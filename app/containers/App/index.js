@@ -13,6 +13,7 @@ import { Switch, Route } from 'react-router-dom';
 import HomePage from 'containers/HomePage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
 
+import FlashMessage from 'containers/FlashMessage';
 import GlobalStyle from '../../global-styles';
 
 export default function App() {
@@ -23,6 +24,7 @@ export default function App() {
         <Route component={NotFoundPage} />
       </Switch>
       <GlobalStyle />
+      <FlashMessage />
     </div>
   );
 }
