@@ -12,7 +12,7 @@
 ## Quick start
 
 1.  Make sure that you have Node.js v8.15.1 and npm v5 or above installed.
-2.  Clone this repo using `git@github.com:nik-john/segmented-control-interface.git`
+2.  Clone this repo using `git clone git@github.com:nik-john/segmented-control-interface.git`
 3.  Move to the appropriate directory: `segmented-control-interface`.<br />
 4.  Run `npm start` to see the app at `http://localhost:3000`
 5.  All available APIs can be seen at `http://localhost:3000/api`
